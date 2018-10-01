@@ -7,10 +7,10 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Divider from '@material-ui/core/Divider';
-import Usa from './../../assets/flags/usa.png';
-import France from './../../assets/flags/france.png';
-import NL from './../../assets/flags/netherlands.png';
-import Spain24 from './../../assets/flags/spain24.png';
+import German from '../boxes/German';
+import Spanish from '../boxes/Spanish';
+import French from '../boxes/French';
+import English from '../boxes/English';
 
 const styles = () => ({
   root: {
@@ -99,18 +99,27 @@ class TableRow extends Component {
                   <div className="row-title">
                     {this.props.row.date}
                   </div>
+                  <div className="row-day">
+                    Wednesday
+                  </div>
                 </div>
                 :
                 this.props.place === "last" ?
                   <div className="row-title-container last">
                     <div className="row-title">
-                    {this.props.row.date}
-                  </div>
+                      {this.props.row.date}
+                    </div>
+                    <div className="row-day">
+                      Wednesday
+                    </div>
                   </div>
                   :
                   <div className="row-title-container">
                     <div className="row-title">
                       {this.props.row.date}
+                    </div>
+                    <div className="row-day">
+                      Wednesday
                     </div>
                   </div>
             }
@@ -130,158 +139,10 @@ class TableRow extends Component {
                     }
                   >
                     <div className="row-content">
-                        <div className="section">
-                          <div className="box">
-                            <div className="title">
-                              <img src={Spain24} className="icon-title" />
-                              Spanish
-                            </div>
-                            <Divider />
-                            <div className="content">
-                              <div className="element">
-                                <div className="language">
-                                  <img src={Usa} className="icon" />
-                                  English:
-                                </div>
-                                <div className="xp">
-                                  200xp
-                                </div>
-                              </div>
-                              <div className="element">
-                                <div className="language">
-                                  <img src={France} className="icon" />
-                                  French:
-                                </div>
-                                <div className="xp">
-                                  300xp
-                                </div>
-                              </div>
-                              <div className="element">
-                                <div className="language">
-                                  <img src={NL} className="icon" />
-                                  Dutch:
-                                </div>
-                                <div className="xp">
-                                  10xp
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="section">
-                          <div className="box">
-                            <div className="title">
-                              <img src={Spain24} className="icon-title" />
-                              Spanish
-                            </div>
-                            <Divider />
-                            <div className="content">
-                              <div className="element">
-                                <div className="language">
-                                  <img src={Usa} className="icon" />
-                                  English:
-                                </div>
-                                <div className="xp">
-                                  200xp
-                                </div>
-                              </div>
-                              <div className="element">
-                                <div className="language">
-                                  <img src={France} className="icon" />
-                                  French:
-                                </div>
-                                <div className="xp">
-                                  300xp
-                                </div>
-                              </div>
-                              <div className="element">
-                                <div className="language">
-                                  <img src={NL} className="icon" />
-                                  Dutch:
-                                </div>
-                                <div className="xp">
-                                  10xp
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="section">
-                          <div className="box">
-                            <div className="title">
-                              <img src={Spain24} className="icon-title" />
-                              Spanish
-                            </div>
-                            <Divider />
-                            <div className="content">
-                              <div className="element">
-                                <div className="language">
-                                  <img src={Usa} className="icon" />
-                                  English:
-                                </div>
-                                <div className="xp">
-                                  200xp
-                                </div>
-                              </div>
-                              <div className="element">
-                                <div className="language">
-                                  <img src={France} className="icon" />
-                                  French:
-                                </div>
-                                <div className="xp">
-                                  300xp
-                                </div>
-                              </div>
-                              <div className="element">
-                                <div className="language">
-                                  <img src={NL} className="icon" />
-                                  Dutch:
-                                </div>
-                                <div className="xp">
-                                  10xp
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="section">
-                          <div className="box">
-                            <div className="title">
-                              <img src={Spain24} className="icon-title" />
-                              Spanish
-                            </div>
-                            <Divider />
-                            <div className="content">
-                              <div className="element">
-                                <div className="language">
-                                  <img src={Usa} className="icon" />
-                                  English:
-                                </div>
-                                <div className="xp">
-                                  200xp
-                                </div>
-                              </div>
-                              <div className="element">
-                                <div className="language">
-                                  <img src={France} className="icon" />
-                                  French:
-                                </div>
-                                <div className="xp">
-                                  300xp
-                                </div>
-                              </div>
-                              <div className="element">
-                                <div className="language">
-                                  <img src={NL} className="icon" />
-                                  Dutch:
-                                </div>
-                                <div className="xp">
-                                  10xp
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                        <Spanish />
+                        <French />
+                        <English />
+                        <German />
                     </div>
                   </div>
                 </ExpansionPanelDetails>

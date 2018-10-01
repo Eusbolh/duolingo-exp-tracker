@@ -1,5 +1,5 @@
 .app {
   padding: 30px;
-  height: -webkit-fill-available;
+  height: stretch;
   background-color: #f1f1f1;
 }
