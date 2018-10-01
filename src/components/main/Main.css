@@ -1,0 +1,96 @@
+.table {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  color: rgb(77, 77, 77);
+}
+
+.table .row-title-container {
+  width: 100%;
+  padding: 8px 20px;
+  height: 24px;
+  border-left: 6px solid green;
+  display: flex;
+  align-items: center;
+}
+
+.table .row-title-container .row-title {
+  font-size: 15px;
+}
+
+.table .first {
+  border-radius: 2px 0 0 0;
+}
+
+.table .last {
+  border-radius: 0 0 0 2px;
+}
+
+.table .row-content {
+  padding: 10px 10px 10px 40px;
+  display: flex;
+}
+
+.table .row-content .section {
+  display: flex;
+  flex-grow: 1;
+}
+
+.table .row-content .section .box {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 150px;
+  border-radius: 2px;
+  border: 1px solid rgb(209, 200, 200);
+  background-color: #fff;
+}
+
+.table .row-content .section .box .title {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 130px;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: white;
+  background-color: #f3f3f3;
+  background-image: url("./../../assets/backgrounds/1.png");
+  background-position: left bottom;
+  opacity: 1;
+}
+
+.table .row-content .section .box .content {
+  padding: 10px;
+  font-size: 13px;
+}
+
+.table .row-content .section .box .content .element {
+  display: flex;
+}
+
+
+.table .row-content .section .box .content .language {
+  display: flex;
+  align-items: center;
+  margin: 1px 0;
+}
+
+.table .row-content .section .box .content .xp {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+/***** *****/
+.icon-title {
+  height: 18px;
+  margin-right: 5px;
+  margin-bottom: 1px;
+}
+
+.icon {
+  height: 16px;
+  margin-right: 3px;
+  filter: sepia(10%);
+}

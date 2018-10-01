@@ -1,0 +1,50 @@
+[
+  {
+    "date": "12/07/2018",
+    "Turkish": {
+      "English": 1000,
+      "French": 2000,
+      "German": 3000
+    },
+    "English": {
+      "French": 1000,
+      "German": 2000
+    },
+    "French": {
+      "German": 2000,
+      "Russian": 3000
+    }
+  },
+  {
+    "date": "13/07/2018",
+    "Turkish": {
+      "English": 1000,
+      "French": 2000,
+      "German": 3000
+    },
+    "English": {
+      "French": 1000,
+      "German": 2000
+    },
+    "French": {
+      "German": 2000,
+      "Russian": 3000
+    }
+  },
+  {
+    "date": "14/07/2018",
+    "Turkish": {
+      "English": 1000,
+      "French": 2000,
+      "German": 3000
+    },
+    "English": {
+      "French": 1000,
+      "German": 2000
+    },
+    "French": {
+      "German": 2000,
+      "Russian": 3000
+    }
+  }
+]
