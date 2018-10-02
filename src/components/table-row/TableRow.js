@@ -11,6 +11,10 @@ import German from '../boxes/German';
 import Spanish from '../boxes/Spanish';
 import French from '../boxes/French';
 import English from '../boxes/English';
+import Usa from './../../assets/flags/usa.png';
+import France from './../../assets/flags/france.png';
+import NL from './../../assets/flags/netherlands.png';
+import DE from './../../assets/flags/germany.png';
 
 const styles = () => ({
   root: {
@@ -77,6 +81,11 @@ const expandedSummaryDefault = {
 };
 
 class TableRow extends Component {
+  state = {
+    completed: 20,
+    buffer: 30,
+  };
+
   render() {
     return (
       <div className="table">
@@ -97,35 +106,55 @@ class TableRow extends Component {
               this.props.place === "first" ?
                 <div className="row-title-container first">
                   <div className="row-title">
-                    {this.props.row.date}
+                    <div className="row-date">
+                      {this.props.row.date}
+                    </div>
+                    <div className="row-day">
+                      Wednesday
+                    </div>
                   </div>
-                  <div className="row-day">
-                    Wednesday
+                  <div className="flags">
+                    <img src={Usa} className="icon-title" alt="" />
+                    <img src={France} className="icon-title" alt="" />
+                    <img src={NL} className="icon-title" alt="" />
                   </div>
                 </div>
                 :
                 this.props.place === "last" ?
                   <div className="row-title-container last">
                     <div className="row-title">
-                      {this.props.row.date}
+                      <div className="row-date">
+                        {this.props.row.date}
+                      </div>
+                      <div className="row-day">
+                        Wednesday
+                      </div>
                     </div>
-                    <div className="row-day">
-                      Wednesday
+                    <div className="flags">
+                      <img src={DE} className="icon-title" alt="" />
+                      <img src={France} className="icon-title" alt="" />
+                      <img src={Usa} className="icon-title" alt="" />
                     </div>
                   </div>
                   :
                   <div className="row-title-container">
                     <div className="row-title">
-                      {this.props.row.date}
+                      <div className="row-date">
+                        {this.props.row.date}
+                      </div>
+                      <div className="row-day">
+                        Wednesday
+                      </div>
                     </div>
-                    <div className="row-day">
-                      Wednesday
+                    <div className="flags">
+                      <img src={France} className="icon-title" alt="" />
+                      <img src={DE} className="icon-title" alt="" />
                     </div>
                   </div>
             }
           </ExpansionPanelSummary>
               <div>
-                <Divider />
+                <Divider style={{backgroundColor: '#beb2b2'}}/>
                 <ExpansionPanelDetails
                   classes={{
                     root: this.props.classes.apple

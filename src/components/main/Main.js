@@ -30,12 +30,12 @@ class Main extends Component {
               index === 0 ?
                 <div key={row.date}>
                   <TableRow row={row} place="first" />
-                  <Divider />
+                  <Divider style={{backgroundColor: '#beb2b2'}}/>
                 </div>
                 :
                 <div key={row.date}>
                   <TableRow row={row} place="" />
-                  <Divider />
+                  <Divider style={{backgroundColor: '#beb2b2'}}/>
                 </div>
           )
         }
