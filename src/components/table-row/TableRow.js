@@ -15,6 +15,8 @@ import Usa from './../../assets/flags/usa.png';
 import France from './../../assets/flags/france.png';
 import NL from './../../assets/flags/netherlands.png';
 import DE from './../../assets/flags/germany.png';
+import Moment from 'react-moment';
+import * as moment from 'moment';
 
 const styles = () => ({
   root: {
@@ -107,10 +109,12 @@ class TableRow extends Component {
                 <div className="row-title-container first">
                   <div className="row-title">
                     <div className="row-date">
-                      {this.props.row.date}
+                      <Moment format="DD.MM.YYYY" parse="DD/MM/YYYY">
+                        {this.props.row.date}
+                      </Moment>
                     </div>
                     <div className="row-day">
-                      Wednesday
+                      {moment(this.props.row.date, "DD/MM/YYYY").format("dddd")}
                     </div>
                   </div>
                   <div className="flags">
@@ -124,10 +128,12 @@ class TableRow extends Component {
                   <div className="row-title-container last">
                     <div className="row-title">
                       <div className="row-date">
-                        {this.props.row.date}
+                        <Moment format="DD.MM.YYYY" parse="DD/MM/YYYY">
+                          {this.props.row.date}
+                        </Moment>
                       </div>
                       <div className="row-day">
-                        Wednesday
+                        {moment(this.props.row.date, "DD/MM/YYYY").format("dddd")}
                       </div>
                     </div>
                     <div className="flags">
@@ -140,10 +146,12 @@ class TableRow extends Component {
                   <div className="row-title-container">
                     <div className="row-title">
                       <div className="row-date">
-                        {this.props.row.date}
+                        <Moment format="DD.MM.YYYY" parse="DD/MM/YYYY">
+                          {this.props.row.date}
+                        </Moment>
                       </div>
                       <div className="row-day">
-                        Wednesday
+                        {moment(this.props.row.date, "DD/MM/YYYY").format("dddd")}
                       </div>
                     </div>
                     <div className="flags">

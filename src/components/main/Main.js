@@ -17,7 +17,6 @@ class Main extends Component {
   render() {
     const { classes } = this.props;
     const data = JSON.parse(this.props.data);
-    console.log(data);
     return (
       <Paper className={classes.root}>
         {
