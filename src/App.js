@@ -6,7 +6,6 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        Hello, world!
         <Main data={this.props.appData}/>
       </div>
     );
