@@ -118,6 +118,9 @@ class TableRow extends Component {
                     <img src={France} className="icon-title" alt="" />
                     <img src={NL} className="icon-title" alt="" />
                   </div>
+                  <div className="exp">
+                    9999exp
+                  </div>
                 </div>
                 :
                 this.props.place === "last" ?
@@ -135,6 +138,9 @@ class TableRow extends Component {
                       <img src={France} className="icon-title" alt="" />
                       <img src={Usa} className="icon-title" alt="" />
                     </div>
+                    <div className="exp">
+                      100exp
+                    </div>
                   </div>
                   :
                   <div className="row-title-container">
@@ -149,6 +155,9 @@ class TableRow extends Component {
                     <div className="flags">
                       <img src={France} className="icon-title" alt="" />
                       <img src={DE} className="icon-title" alt="" />
+                    </div>
+                    <div className="exp">
+                      100exp
                     </div>
                   </div>
             }
